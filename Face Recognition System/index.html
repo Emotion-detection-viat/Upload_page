@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - FRS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="home-page">
+    <!-- Header included here -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img
+            src="https://cdn.pixabay.com/photo/2019/09/10/11/51/reading-4465904_1280.jpg"
+            alt="Logo"
+          />
+          <span>FRS</span>
+        </div>
+        <div class="button-group">
+          <a href="index.html" class="home-link">Home</a>
+          <!-- Home link -->
+          <button
+            class="sign-up-btn"
+            onclick="window.location.href='signup.html'"
+          >
+            Sign Up
+          </button>
+          <button
+            class="log-in-btn"
+            onclick="window.location.href='login.html'"
+          >
+            Log In
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content of Home page -->
+    <main>
+      <div class="welcome-message">
+        <h1>Welcome to FRS</h1>
+        <p>Sign Up or log in to continue</p>
+
+        <!-- Horizontal Scrolling Sections -->
+        <div class="horizontal-scroll-container">
+          <!-- Videos Section -->
+          <section class="media-section">
+            <h2>Videos</h2>
+            <div class="upload-box">
+              <label for="upload-video" class="upload-label">
+                <span class="plus-icon">+</span> Upload Video
+              </label>
+              <input
+                type="file"
+                id="upload-video"
+                class="upload-input"
+                accept="video/*"
+              />
+            </div>
+            <div class="default-media">
+              <p>Default Video 1</p>
+              <video controls>
+                <source
+                  src="https://videos.pexels.com/video-files/7148237/7148237-sd_640_360_30fps.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </section>
+
+          <!-- Images Section -->
+          <section class="media-section">
+            <h2>Images</h2>
+            <div class="upload-box">
+              <label for="upload-image" class="upload-label">
+                <span class="plus-icon">+</span> Upload Image
+              </label>
+              <input
+                type="file"
+                id="upload-image"
+                class="upload-input"
+                accept="image/*"
+              />
+            </div>
+            <div class="default-media">
+              <p>Default Image 1</p>
+              <img
+                src="https://cdn.pixabay.com/photo/2021/01/24/23/13/man-5946820_1280.jpg"
+                alt="Default Image 1"
+              />
+              <p>Default Image 2</p>
+              <img
+                src="https://cdn.pixabay.com/photo/2022/08/30/08/48/artificial-intelligence-7420667_960_720.jpg"
+                alt="Default Image 2"
+              />
+            </div>
+          </section>
+
+          <!-- Audio Section -->
+          <section class="media-section">
+            <h2>Audio</h2>
+            <div class="upload-box">
+              <label for="upload-audio" class="upload-label">
+                <span class="plus-icon">+</span> Upload Audio
+              </label>
+              <input
+                type="file"
+                id="upload-audio"
+                class="upload-input"
+                accept="audio/*"
+              />
+            </div>
+            <div class="default-media">
+              <p>Default Audio 1</p>
+              <audio controls>
+                <source src="default-audio.mp3" type="audio/mp3" />
+                Your browser does not support the audio tag.
+              </audio>
+            </div>
+          </section>
+
+          <!-- Texts Section -->
+          <section class="media-section">
+            <h2>Texts</h2>
+            <div class="upload-box">
+              <label for="upload-text" class="upload-label">
+                <span class="plus-icon">+</span> Upload Text
+              </label>
+              <input
+                type="file"
+                id="upload-text"
+                class="upload-input"
+                accept=".txt"
+              />
+            </div>
+            <div class="default-media">
+              <p>Default Text 1</p>
+              <pre>Sample text content here...</pre>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
